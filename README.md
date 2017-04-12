@@ -1,12 +1,5 @@
-#Workflow Template
+#Basic SASS Template
 
- |  helpful commands |
-\|/                 \|/
- V                   V
- 
-gulp
-ctrl c
-
-NODE_ENV=production gulp
-
-
+run npm install 
+run gulp
+get to work
