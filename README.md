@@ -1,5 +1,5 @@
-#Basic SASS Template
+# Basic SASS Template
 
-run npm install 
-run gulp
-get to work
+1. run npm install 
+2. run gulp
+3. get to work
