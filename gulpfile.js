@@ -27,8 +27,7 @@ gulp.task('compass', function() {
     .pipe(compass({
       sass: 'sass',
       image: 'images',
-      style: 'expanded',
-      comments: true
+      style: 'expanded'
     })
     .on('error', gutil.log))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'ff 17', 'opera 12.1', 'ios 6', 'android 4'))
