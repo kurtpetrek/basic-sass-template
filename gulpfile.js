@@ -12,14 +12,6 @@ var env,
 
 env = process.env.NODE_ENV || 'development';
 
-if (env === 'development') {
-  outputDir = 'builds/development/';
-  sassStyle = 'expanded';
-} else {
-  outputDir = 'builds/production/';
-  sassStyle = 'compressed';
-}
-
 sassSources = ['sass/style.scss'];
 
 gulp.task('compass', function() {
@@ -37,12 +29,11 @@ gulp.task('compass', function() {
 
 gulp.task('watch', function() {
   gulp.watch('sass/*.scss', ['compass']);
-  gulp.watch('style/*.css', ['autoprefixer']);
 });
 
 gulp.task('connect', function() {
   connect.server({
- //   root: outputDir,
+    root: './',
     livereload: true
   });
 });
